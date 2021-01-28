@@ -35,3 +35,6 @@ def predictions(model, X_train, X_test, y_train, y_test):
     rmse_test = np.sqrt(mean_squared_error(y_test, y_test_pred))
     print(f'Training Scores: R2 {R2_train:.5f}, Mean Absolute Error {mae_train:.2f}, Root Mean Squared Error {rmse_train:.2f}')
     print(f'Testing Scores: R2 {R2_test:.5f}, Mean Absolute Error {mae_test:.2f}, Root Mean Squared Error {rmse_test:.2f}')
+
+
+    
