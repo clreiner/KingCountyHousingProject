@@ -1,55 +1,30 @@
 # Phase 2 Project
 
-Another module down--you're almost half way there!
+King County House Sales Linear Regression Model
 
-![awesome](https://raw.githubusercontent.com/learn-co-curriculum/dsc-phase-2-project-campus/master/halfway-there.gif)
-
-All that remains in Phase 2 is to put our newfound data science skills to use with a large project! This project should take 20 to 30 hours to complete.
-
-## Project Overview
-
-For this project, you will use regression modeling to analyze house sales in a northwestern county.
-
-### The Data
-
-This project uses the King County House Sales dataset, which can be found in  `kc_house_data.csv` in the data folder in this repo. The description of the column names can be found in `column_names.md` in the same folder. As with most real world data sets, the column names are not perfectly described, so you'll have to do some research or use your best judgment if you have questions about what the data means.
-
-It is up to you to decide what data from this dataset to use and how to use it. If you are feeling overwhelmed or behind, we recommend you ignore some or all of the following features:
-
-* date
-* view
-* sqft_above
-* sqft_basement
-* yr_renovated
-* zipcode
-* lat
-* long
-* sqft_living15
-* sqft_lot15
+<img src=images/Dog-House.jpg alt="editorial cartoon of couple house hunting in seattle looking at the affordable dog house, by David Horsey in the Seattle Times" width="500"/>
 
 ### Business Problem
 
-It is up to you to define a stakeholder and business problem appropriate to this dataset.
+Seattle is the fastest growing city in the country with a population increase of almost 30% from 2010 to 2020. The surrounding King County ranks 3rd in the country for growth with a population increase of 16% in the same timeframe. All this growth has increased demand for housing and caused home prices to skyrocket. The median house price in Seattle rose 93% from 2012-2018.
 
-If you are struggling to define a stakeholder, we recommend you complete a project for a real estate agency that helps homeowners buy and/or sell homes. A business problem you could focus on for this stakeholder is the need to provide advice to homeowners about how home renovations might increase the estimated value of their homes, and by what amount.
+This is a difficult market for home buyers, so this project will help buyers decide what trade-offs are worthwhile to find the best house for their needs in their price range.
 
-## Deliverables
+### Method
 
-There are three deliverables for this project:
+I used Scikit Learn to build a multilinnear regression model to predict house prices using the King County House Sales dataset. I also used a dataset of King County zipcodes and median incomes from Communities Count- a King County population dashboard to investigate the roll of median household income on the effect of zipcodes in determining house prices.
 
-* A **GitHub repository**
-* A **Jupyter Notebook**
-* A **non-technical presentation**
+### Conclusions
 
-Review the "Project Submission & Review" page in the "Milestones Instructions" topic for instructions on creating and submitting your deliverables. Refer to the rubric associated with this assignment for specifications describing high-quality deliverables.
+In building this model, I determined that zipcode is the most important feature in determining a the price of a home. If you would like to have Bill Gates and Jeff Bezos as neighbors, you can expect to pay 135% more for home, compared to similar homes in the mean neighborhoods. Suburbs to the south of Seattle offer have prices 30% lower than similar homes in the mean neighborhoods. 
 
-### Key Points
+After zipcode, the square footage of a home the next largest impact on home price, with the above ground space having a much larger impact on home price than basement size. 
 
-* **Your deliverables should explicitly address each step of the data science process.** Refer to [the Data Science Process lesson](https://github.com/learn-co-curriculum/dsc-data-science-processes) from Topic 19 for more information about process models you can use.
+<img src="images/increasebysqft.png" alt="graph of change in house price with increasing house size" width="1000"/>
 
-* **Your Jupyter Notebook should demonstrate an iterative approach to modeling.** This means that you begin with a basic model, evaluate it, and then provide justification for and proceed to a new model. After you finish refining your models, you should provide 1-3 paragraphs discussing your final model - this should include interpreting at least 3 important parameter estimates or statistics.
+Finally, the number of bathrooms can significantly increase home prices, especially in the jump from 1 to 2 bathrooms.
 
-* **Based on the results of your models, your notebook and presentation should discuss at least two features that have strong relationships with housing prices.**
+<img src="images/increasebybathroom.png" alt="graph of change in house price with more bathrooms" width="500"/>
 
 ## Getting Started
 
