@@ -1,6 +1,4 @@
-# Phase 2 Project
-
-King County House Sales Linear Regression Model
+# King County House Sales Linear Regression Model
 
 ![editorial cartoon of couple house hunting in seattle looking at the affordable dog house, by David Horsey in the Seattle Times](/images/Dog-house.jpg)
 
