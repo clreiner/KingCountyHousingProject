@@ -14,9 +14,12 @@ I used Scikit Learn to build a multilinnear regression model to predict house pr
 
 ### Results
 
-In building this model, I determined that zipcode is the most important feature in determining a the price of a home. If you would like to have Bill Gates and Jeff Bezos as neighbors, you can expect to pay 135% more for home, compared to similar homes in the mean neighborhoods. Suburbs to the south of Seattle offer have prices 30% lower than similar homes in the mean neighborhoods. 
+In building this model, I determined that zipcode is the most important feature in determining a the price of a home. 
 
-After zipcode, the square footage of a home the next largest impact on home price, with the above ground space having a much larger impact on home price than basement size. Additionally, it seems that any price difference that comes from additional bedrooms is due to the increase in size, not the number of bedrooms.
+![map of King County zipcodes with percent increase in price for each](/images/zipcode_effect.png)
+Unsuprisingly, the zipcode with the largest impact on house prices, 98039 (middle of map in magenta), is home to Steve Ballmer, Bill Gates and Jeff Bezos. Living in their zipcode will increase the cost of a house by 135% compared to a similar house in the average neighborhood. The most expensive zipcodes cross Seattle proper just north of downtown, then prices gradually decrease as you go outward in both directions, with north Seattle and suburbs more expensive than sounth Seattle and suburbs. Zipcode has little influence on home price in the downtown core and just to the south. The zipcodes with the most negative impact on price are mostly suburbs to the south of Seattle.
+
+After zipcode, the square footage of a home the next largest impact on home price, with the above ground space having a much larger impact on home price than basement size. Additionally, it seems that any price difference that comes from additional bedrooms is due to the increase in size, not the number of bedrooms. The prices increase by a percent of the home's base price for each additional squarefoot. The biggest percent increases happen when the house is small and adding space, but the total dollars increase may be bigger with larger houses. For instance a \$300,000 500sqft home would increase in price by 12% or \$36,000 if increased in size by 500sqft, whereas a \$1,000,000 2000sqft house would increase in price by 4% or \$40,000 if increased in size by 500sqft.
 
 <img src="images/increasebysqft.png" alt="graph of change in house price with increasing house size" width="1000"/>
 
