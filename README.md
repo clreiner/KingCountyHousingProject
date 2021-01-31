@@ -29,13 +29,14 @@ Finally, the number of bathrooms can significantly increase home prices, especia
 
 ### Conclusions
 
-This model can account for 85% of the variability in house prices in King County. I think the model is a decent start, but could be improved by doing more to work out the best transformation method for each feature. Additionally, I would like to try different scaling methods. 
+Home buyers in this market who are looking to maximize their dollars should carefully consider the locations in which they search. This is make the biggest impact on how far their budget will go. The second most important factor in housing is the square footage of the house. If they have a particular size house in mind, they could maximize space per dollar by looking for a house with a large basement, as basement space is much less expensive than above ground space. King County, and Seattle in particular, are very hilly, so they might look for a daylight basement to get the extra, less expensive space without the darkness associated with a typical basement. Finally, if the buyers are set on two or three bathrooms, it would be worth finding a one bathroom house with space to add more themselves.
+
+This model can account for 85% of the variability in house prices in King County, which is a 10% increase from my initial model. I think the model is a decent start, but could be improved by doing more to work out the best transformation method for each feature. Additionally, I would like to try different scaling methods.
 
 Zipcode has an outsized effect on the model, so I would like to explore other aspects of zipcode to see what might contribute to the effect. Perhaps building a model for each zipcode would be a way to keep the zipcode from having too much influence on the model.
 
-Seattle's population growth and corresponding demand for housing has lead to a change in zoning laws that allow "Accesory Dwelling Units" to be built on lots already having a main house. It would be interesting to see how these additional units will impact the value of homes with and without them. It seems like additional space would increase value, but perhaps the exclusivity factor of having a private yard will also play a role in pricing. 
+Seattle's population growth and corresponding demand for housing has lead to a change in zoning laws that allow "Accesory Dwelling Units" to be built on lots already having a main house. It would be interesting to see how these additional units will impact the value of homes with and without them. It seems like additional space would increase value, but perhaps the exclusivity factor of having a private yard will also play a role in pricing.
 
 The next step for this model is to build out an application that will allow buyers to use sliders to change house features- location, bathrooms, square footage, etc- and see the effect those changes have on house price.
 
 This analysis would benefit from more recent data and as well as the previously mentioned more fine tuning of the data. Overall, it does a decent job of predicting house prices in King County in the years 2014 & 2015.
-
